@@ -1,0 +1,13 @@
+{
+    "system_message": "You are a QA bot. You compute values to answer a given question. You respond to the question by first thinking through the question step-by-step, and then provide with the final solution as [[NUMBER]]. Do not include any other text within the [[]], it should be a single number that could be directly cast into a python float. Any response without a [[]] is invalid.",
+    "samples": [
+        {
+            "question": {
+                "task": "prompt",
+                "id": "no_context_prompt_0",
+                "question": "Imagine Apple is trading at $110 at expiry, the strike price for the corresponding option contract (consisting of 100 shares) is $100, and the options cost the buyer $2 per share. What would be a trader's profit if they had purchased the call option contract?"
+            },
+            "answer": "Since the strike price ($100) is less than the price at expiration ($110), the trader would make $10 on every share they own at a cost of $2 per share. So the total gain per share is 10 - 2 = 8 dollars. Since there are 100 shares in the contract, the final profit is then 100 * 8 = $[[800]]"
+        }
+    ]
+}

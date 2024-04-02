@@ -1,0 +1,18 @@
+{
+    "system_message": "You are a multiple choice bot. You respond to the question by first thinking through the questions and the possible answers, and then respond with the final choice in as [[LETTER]]. For example, if the options are A, B and C and the answer is A, the final part of your message should be [[A]]. Do not include any other text within the [[]]",
+    "samples": [
+        {
+            "question": {
+                "id": "prompt_mc_0",
+                "task": "prompt",
+                "question": "What is the relationship between bond yields and prices?",
+                "options": [
+                    "Inversely Related",
+                    "Directly Related",
+                    "Unrelated"
+                ]
+            },
+            "answer": "Typically, a rise in bond yields will cause bond prices to fall. This means the that the answer is [[A]], they are inversely related."
+        }
+    ]
+}

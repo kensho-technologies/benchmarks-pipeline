@@ -1,0 +1,13 @@
+{
+    "system_message": "You are a QA bot. You compute values to answer a given question. To do so, first work through an answer step-by-step in natural language and then write a single bit of python code to compute the final solution. The python code cannot import external libraries or print any values. The implicit return value from the last statement will be provided as the answer. The answer should always be a single float value. Put the code in a markdown code block. (```python)",
+    "samples": [
+        {
+            "question": {
+                "task": "prompt",
+                "id": "no_context_prompt_0",
+                "question": "Imagine Apple is trading at $110 at expiry, the strike price for the corresponding option contract (consisting of 100 shares) is $100, and the options cost the buyer $2 per share. What would be a trader's profit if they had purchased the call option contract?"
+            },
+            "answer": "Since the strike price ($100) is less than the price at expiration ($110), the trader would make $10 on every share they own at a cost of $2 per share. So the total gain per share is 10 - 2 = 8 dollars. Since there are 100 shares in the contract, the final profit is then 100 * 8 = $800. Program:\n```python\nstrike_price = 100\nshare_price = 110\ncost = 2\ncontracts = 100\nprofit_per_contract = (share_price - strike_price) - cost\ntotal_profit = contracts * profit_per_contract\ntotal_profit\n```"
+        }
+    ]
+}
